@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "PhotoAlbumProcessorSAMStack"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-ts9fflkg8cqy"
+s3_prefix = "PhotoAlbumProcessorSAMStack"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "S3UserfilesBucketArn=\"arn:aws:s3:::photoalbums024b6869a2274534946c4a41fcc10820152630-vscode\""
